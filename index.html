@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Principal-Zacatlán</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://use.fontawesome.com/063cf54505.js"></script>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+  <nav class="navi">
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><i class="material-icons">cloud</i>Zacatlan</a>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a class="waves-effect" href="index.html"><i class="material-icons left">home</i>Inicio</a></li>
+        <li class="waves-effect"><a href="explora.html"><i class="material-icons left">search</i>Explora</a></li>
+        <li><a class="waves-effect" href="eventos.html"><i class="material-icons left">event</i>Eventos</a></li>
+        <li><a class="waves-effect" href="historia.html"><i class="material-icons left">history</i>Historia</a></li>
+      </ul>
+      
+      <ul id="slide-out" class="side-nav white-text" style="background-color: #1e1f33">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="Imagenes/backgroundnav.jpg">
+            </div>
+            <span class="white-text">Menu Principal</span>
+          </div>
+        </li>
+        <li><a class="waves-effect white-text" href="index.html"><i class="material-icons left">home</i>Inicio</a></li>
+        <li><a class="active waves-effect white-text" href="explora.html"><i class="material-icons left">search</i>Explora</a></li>
+        <li><a class="waves-effect white-text" href="eventos.html"><i class="material-icons left">event</i>Eventos</a></li>
+        <li><a class="waves-effect white-text" href="historia.html"><i class="material-icons left">history</i>Historia</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="slider fullscreen">
+    <ul class="slides">
+      <li>
+        <img src="Imagenes/image1.jpeg">
+        <div class="caption right-align">
+          <h3>Heróica Ciudad de Zacatlán</h3>
+          <h5>Visita el mejor pueblo mágico del estado de Puebla</h5>
+        </div>
+      </li>
+      <li>
+        <img src="Imagenes/image2.jpeg">
+        <div class="caption center-align">
+          <h3>¿Qué hacer en Zacatlán</h3>
+          <a href="explora.html" class="btn waves-effect pulse">Entrar</a>
+        </div>
+      </li>
+      <li>
+        <img src="Imagenes/image3.jpeg">
+        <div class="caption right-align">
+          <h3>Conoce los últimos eventos en zacatlán</h3>
+          <a href="eventos.html" class="btn waves-effect pulse ">Entrar</a>
+        </div>
+      </li>
+      <li>
+        <img src="Imagenes/image4.jpg">
+        <div class="caption left-align">
+          <h3>Descubre la increíble historia de la ciudad</h3>
+          <a href="historia.html" class="btn waves-effect pulse">Entrar</a>
+        </div>
+      </li>
+    </ul>
+
+    <div class="container main">
+    <div class="row main">
+      <div class="col s12">
+        <h2 id="introduce" class="flow-text white-text">Introducción</h2>
+        <p class="flow-text">Quienes visitan Zacatlán, en el estado de Puebla, perciben niebla y frío, como si alguien hubiera levantado la comunidad entera hasta las nubes. En un instante las calles se colman de niebla y no es posible ver ni la punta de la nariz. Sin embargo, este fenómeno no deja de ser sugestivo y atrayente. Luego, lo siguiente que destaca es un enorme reloj floral en el Centro Histórico, el cual marca el ritmo de vida de este pueblo de sortilegio.</p>
+      </div>
+      <h2 class="flow-text white-text">Características</h2>
+      <blockquote>
+        <p class="flow-text">Se incorporó al programa Pueblos Mágicos en el año 2011.</p>
+        <p class="flow-text">Su nombre deriva de los vocablos en náhuatl, zácatl (zacate), y tlan(sufijo de lugar) que significan "lugar donde abundan los zacates". Es también uno de los mayores productores de manzanas, razón por la que se conoce como Zacatlán de las Manzanas.</p>
+        <p class="flow-text">Es también uno de los mayores productores de manzanas, razón por la que se conoce como Zacatlán de las Manzanas.​</p>
+        <p class="flow-text">Cada año Zacatlán produce alrededor de 320 mil botellas de sidra rosada, gasificada, dulce, natural, de pera y durazno.</p>
+      </blockquote>
+      <h3 class="white-text">¿Dónde se encuentra?</h3>
+      <div class="col s12 z-depth-3 hoverable" id="map"></div>
+      <div class="col s12">
+        <h3 class="white-text">Lo típico</h3>
+        <p class="flow-text">En zacatlán podrás encontrar sarapes confeccionados, quexquemetl de lana, telares de cintura, utensilios, de madera y cerámica, rebozos, así como trajes típicos tanto ara dama como para caballero. Y figuras hechas con totomoxtle (hoja de maíz). En plaza de Santa Cecilia podrás encontrar bordados de Huauchinango y jarrones de barro de San Miguel Tenango.</p>
+      </div>
+    </div>
+  </div>
+    <footer class="page-footer teal darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>¡Gracias!</h5>
+          <p class="white-text">Esperamos que hayas disfrutado de nuestra página turística y te haya dado una idea más precisa sobre lo que hay y puedes hacer en Zacatlán.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Lo más visitado</h5>
+          <ul>
+            <li><a href="index.html" class="grey-text text-lighten-3">Inicio</a></li>
+            <li><a href="explora.html" class="grey-text text-lighten-3">Explora</a></li>
+            <li><a href="historia.html" class="grey-text text-lighten-3">Historia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 Zacatlan Copyright
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script type="text/javascript" src="main2.js"></script>
+  <script type="text/javascript">
+    function initMap() {
+      var uluru = {lat: 19.930686, lng:-97.9609281};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcxFTkJN2FInIcSWfgJVRZLcVjL-18nkM&callback=initMap">
+</script>
+
+</body>
+</html>
